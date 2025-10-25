@@ -35,8 +35,8 @@ Tam liste (24 tablo): `Personel, Modeller, BilgisayarKasasi, Anakart, Markalar, 
 
 ---
 
-Trigger (INSERT sonrası yedekleme)
-
+### Trigger (INSERT sonrası yedekleme)
+```sql
 CREATE TRIGGER TR_AFTER_INSERT ON dbo.Musteri
 AFTER INSERT
 AS
@@ -53,8 +53,7 @@ RETURNS MONEY
 AS
 BEGIN
     RETURN (
-        SELECT
-            ISNULL(SUM(CAST(Fiyat AS MONEY)),0)
+        SELECT ISNULL(SUM(CAST(Fiyat AS MONEY)),0)
         FROM (
             SELECT Fiyat FROM dbo.Islemci
             UNION ALL SELECT Fiyat FROM dbo.Anakart
