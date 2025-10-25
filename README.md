@@ -73,6 +73,8 @@ EXEC dbo.sp_ArdisikUcKayitEkleme;
 EXEC dbo.sp_MusteriKayitDegistirme @Musteri_ID=1, @Ad='Ali', @Soyad='Yılmaz';
 EXEC dbo.sp_MusteriKayitSilme @Musteri_ID=5;
 
+###
+
 View (JOIN örnekleri)
 
 - Inner_Join/ModellerXRam
@@ -80,13 +82,13 @@ View (JOIN örnekleri)
 - Right_Outer_Join/MarkalarXPSU
 - Full_Outer_Join/ModellerXBilgisiyarKasasi
 
-  🚀 Kurulum & Çalıştırma
+🚀 Kurulum & Çalıştırma
   
-SQL Server Management Studio (SSMS)’ı açın.
-Yeni bir veri tabanı oluşturun (örn. ComputerStoreDB).
-Depodaki computer-store-sql-database.sql dosyasını açın.
-Sırasıyla tablolar, kısıtlamalar, fonksiyonlar, görünümler, tetikleyiciler ve prosedürleri oluşturan scriptleri çalıştırın.
-Örnek veri/raporlama sorgularını çalıştırın.
+- SQL Server Management Studio (SSMS)’ı açın.
+- Yeni bir veri tabanı oluşturun (örn. ComputerStoreDB).
+- Depodaki computer-store-sql-database.sql dosyasını açın.
+- Sırasıyla tablolar, kısıtlamalar, fonksiyonlar, görünümler, tetikleyiciler ve prosedürleri oluşturan scriptleri çalıştırın.
+- Örnek veri/raporlama sorgularını çalıştırın.
 İsteğe bağlı: BEGIN TRAN ile test edin, gerekirse ROLLBACK ile geri alın.
 
 
