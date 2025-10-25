@@ -46,8 +46,10 @@ BEGIN
     FROM inserted i;
 END;
 
+```
+🧮 Function Örneği (Toplam stok değeri hesaplama)
 Function (Toplam stok değeri)
-
+```
 CREATE FUNCTION dbo.FN_STOK_FIYAT_TOPLAM()
 RETURNS MONEY
 AS
@@ -67,14 +69,13 @@ BEGIN
         ) AS X
     );
 END;
-
-Stored Procedure (Müşteri işlemleri – örnek isimler)
+```
+⚙️ Stored Procedure Örnekleri (Müşteri işlemleri)
+```
 EXEC dbo.sp_ArdisikUcKayitEkleme;
 EXEC dbo.sp_MusteriKayitDegistirme @Musteri_ID=1, @Ad='Ali', @Soyad='Yılmaz';
 EXEC dbo.sp_MusteriKayitSilme @Musteri_ID=5;
-
-###
-
+```
 View (JOIN örnekleri)
 
 - Inner_Join/ModellerXRam
